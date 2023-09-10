@@ -1,0 +1,4 @@
+{% seo %} {% include head-custom.html %}
+{{ content }} {% if site.github.private != true and site.github.license %}
+This site is open source. {% github_edit_link "Improve this page" %}.
+{% endif %}
