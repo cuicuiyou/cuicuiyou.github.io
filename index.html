@@ -119,7 +119,7 @@ title: Jian Cui's Homepage
   </li>
 </ul>
 
-  <p>Latest update: Aug 2025</p>
+  <p>Latest update: September 2025</p>
 </div>
 
 
@@ -140,6 +140,8 @@ title: Jian Cui's Homepage
     float: left;
     margin: 0 20px 10px 0;
     display: block;
+    max-width: 100%;   /* 保证不会超出屏幕 */
+    height: auto;
   }
 
   .intro-text {
@@ -153,5 +155,29 @@ title: Jian Cui's Homepage
 
   .clear {
     clear: both;
+  }
+
+  /* 手机端的自适应 */
+  @media (max-width: 768px) {
+    .profile-photo {
+      float: none;
+      display: block;
+      margin: 0 auto 16px;
+      width: 70%;      /* 占屏幕 70% 宽度 */
+      height: auto;
+    }
+
+    .intro-text {
+      overflow: visible;
+      text-align: center;
+    }
+
+    .intro-text b {
+      font-size: 24px; /* 手机上稍微小一点 */
+    }
+
+    .homepage {
+      font-size: 16px; /* 正文字体缩小一点 */
+    }
   }
 </style>
